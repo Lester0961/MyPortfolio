@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Lester Dematera — Frontend Developer &amp; System Builder</title>
+  <meta name="description" content="Portfolio of John Lester Dematera — Frontend Developer, Computer Science Student, and System Builder. I build practical, clean, and user-friendly web systems that help schools, churches, and local communities work smarter.">
+  <meta name="author" content="John Lester Dematera">
+  <meta property="og:title" content="John Lester Dematera — Frontend Developer & System Builder">
+  <meta property="og:description" content="I build practical, clean, and user-friendly web systems that help schools, churches, and local communities work smarter.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B1120">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111827'/><text x='16' y='21' text-anchor='middle' fill='%233B82F6' font-family='system-ui' font-size='12' font-weight='700'>JLD</text></svg>">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ============================================
+       01. NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo" aria-label="Home">
+        <div class="logo-mark">JLD</div>
+        <span class="logo-text">John Lester Dematera</span>
+      </a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume/John_Lester_Dematera_Resume.pdf" target="_blank" rel="noopener" class="navbar-resume desktop-only">
+          Resume
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/resume/John_Lester_Dematera_Resume.pdf" target="_blank" rel="noopener" class="navbar-resume">
+      Resume
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    </a>
+  </div>
+
+  <!-- ============================================
+       02. HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Frontend Developer
+      </div>
+
+      <div class="hero-avatar">
+        <img src="assets/images/profile.png" alt="John Lester Dematera" class="hero-avatar-img">
+      </div>
+
+      <h1 class="hero-name">John Lester Dematera</h1>
+      <p class="hero-subtitle">Frontend Developer | Computer Science Student | System Builder</p>
+      <p class="hero-tagline">I build practical, clean, and user-friendly web systems that help schools, churches, and local communities work smarter.</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="assets/resume/John_Lester_Dematera_Resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+          Download Resume
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-social">
+        <a href="https://github.com/Lester0961" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://ph.jobstreet.com/profiles/johnlester-dematera-Lp1xH53T9z" target="_blank" rel="noopener" aria-label="JobStreet">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </a>
+        <a href="mailto:johnlesterdematera0961@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       03. PROOF / STATS ROW
+       ============================================ -->
+  <section class="stats" id="stats" aria-label="Quick stats">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div>
+            <div class="stat-value">11</div>
+            <div class="stat-label">Repositories</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div>
+            <div class="stat-value">3</div>
+            <div class="stat-label">Live Apps</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div>
+            <div class="stat-value">Frontend Dev</div>
+            <div class="stat-label">at PLWM</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <div class="stat-value">CS Student</div>
+            <div class="stat-label">3rd Year</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       04. FEATURED PROJECTS
+       ============================================ -->
+  <section class="section projects" id="projects" aria-label="Featured projects">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div>
+          <p class="section-label">Featured Projects</p>
+          <h2 class="section-title">What I've Built</h2>
+        </div>
+        <a href="https://github.com/Lester0961?tab=repositories" target="_blank" rel="noopener" class="see-all">
+          See all projects
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- Top Row — Primary Projects -->
+      <div class="projects-grid projects-grid-top reveal" style="margin-bottom: 1.25rem;">
+
+        <!-- Project 01: SRS -->
+        <article class="project-card" id="project-srs">
+          <div class="project-image">
+            <div class="project-image-bg gradient-1">SRS</div>
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Scholarship Recommendation System (SRS)</h3>
+            <p class="project-desc">Recommends qualified students for scholarships based on weighted criteria, eligibility gates, and explainable matching logic.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="https://srs-frontend-mu.vercel.app" target="_blank" rel="noopener" class="project-link">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Lester0961/SRS" target="_blank" rel="noopener" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02: SISP -->
+        <article class="project-card" id="project-sisp">
+          <div class="project-image">
+            <div class="project-image-bg gradient-2">SISP</div>
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Student Information and Services Portal (SISP)</h3>
+            <p class="project-desc">Portal for student records, requests, and announcements with an AI-powered academic advisory chatbot (ARIA).</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sisp-theta.vercel.app" target="_blank" rel="noopener" class="project-link">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Lester0961/sisp" target="_blank" rel="noopener" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03: PLWM CMS (Private Case Study) -->
+        <article class="project-card" id="project-plwm">
+          <div class="project-image">
+            <div class="project-image-bg gradient-3">CMS</div>
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">PLWM Church CMS</h3>
+            <p class="project-desc">Custom church management system for member records, events, giving, and content management with role-based access.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-links">
+              <button type="button" class="project-link project-link--case-study" data-modal="plwm">
+                Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Bottom Row — Supporting Projects -->
+      <div class="projects-grid projects-grid-bottom reveal">
+
+        <!-- Project 04: Food Ordering -->
+        <article class="project-card" id="project-food">
+          <div class="project-image">
+            <div class="project-image-bg gradient-4">FOOD</div>
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Food Ordering App</h3>
+            <p class="project-desc">User-friendly food ordering system with cart, checkout, and admin dashboard. Fully responsive single-page application.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="https://foodorder-lester.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Lester0961/foodorder" target="_blank" rel="noopener" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 05: RMC Grade System -->
+        <article class="project-card" id="project-rmc">
+          <div class="project-image">
+            <div class="project-image-bg gradient-5">RMC</div>
+            <span class="project-number">05</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">RMC Grade Management System</h3>
+            <p class="project-desc">Manage grades, subjects, and student performance securely. Desktop-based with role-based access for admins and students.</p>
+            <div class="project-tags">
+              <span class="tag">VB.NET</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Lester0961/rmcgradesystem" target="_blank" rel="noopener" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <button type="button" class="project-link project-link--case-study" data-modal="rmc">
+                Case Study
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 06: AuraHub -->
+        <article class="project-card" id="project-aura">
+          <div class="project-image">
+            <div class="project-image-bg gradient-6">AURA</div>
+            <span class="project-number">06</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">AuraHub</h3>
+            <p class="project-desc">Community hub for announcements, groups, and resource sharing. Mood-based music app with dynamic adaptive UI.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Lester0961/AURA-HUB" target="_blank" rel="noopener" class="project-link">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       05. ABOUT ME
+       ============================================ -->
+  <section class="section about" id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>I'm a Computer Science student and passionate frontend developer who enjoys turning ideas into functional, user-centered web applications. I focus on writing clean code, designing responsive interfaces, and building systems that solve real problems for schools, churches, and communities.</p>
+          <p>My experience includes working on a custom church management system, a scholarship recommendation system, a student information portal, a food ordering web app, a VB.NET grade management system, and other academic software projects. I'm always eager to learn, collaborate, and ship meaningful projects.</p>
+        </div>
+        <div class="about-strengths">
+          <h3>Key Strengths</h3>
+          <div class="strength-list">
+            <div class="strength-item">
+              <div class="strength-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              Responsive UI
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              System Development
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              Database-backed Apps
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              Deployment
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              Team Collaboration
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       06. SKILLS
+       ============================================ -->
+  <section class="section" id="skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">Technologies I Work With</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-category">
+          <div class="skill-category-title">Frontend</div>
+          <div class="skill-pills">
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-title">Backend / API</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express</span>
+            <span class="skill-pill">NestJS</span>
+            <span class="skill-pill">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-title">Database</div>
+          <div class="skill-pills">
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Supabase</span>
+            <span class="skill-pill">Prisma ORM</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-title">Tools / Deployment</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">Vercel</span>
+            <span class="skill-pill">Render</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-title">Programming Foundations</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">VB.NET</span>
+            <span class="skill-pill">Dart</span>
+            <span class="skill-pill">Flutter</span>
+            <span class="skill-pill">C++</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       07. EXPERIENCE
+       ============================================ -->
+  <section class="section" id="experience" aria-label="Experience" style="background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">Work History</h2>
+      </div>
+      <div class="experience-timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot--active"></div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Front End Developer</div>
+              <div class="timeline-company">PLWM — Manila Central Church</div>
+            </div>
+            <span class="timeline-date">Jan 2026 – Present</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Developing and maintaining a custom Church Management System (CMS)</li>
+            <li>Building responsive UI layouts and reusable components</li>
+            <li>Collaborating with the team to improve features and user experience</li>
+            <li>Debugging issues and providing deployment and support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       08. EDUCATION
+       ============================================ -->
+  <section class="section" id="education" aria-label="Education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Education</p>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="education-grid reveal">
+        <div class="education-card">
+          <div class="education-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <div class="education-degree">Bachelor of Computer Science</div>
+            <div class="education-school">Regis Marie College</div>
+            <div class="education-status">Expected finish Oct 2026</div>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <div class="education-degree">Bachelor of Computer Science</div>
+            <div class="education-school">STI College</div>
+            <div class="education-status">Finished 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       09. GITHUB / ACTIVITY PROOF
+       ============================================ -->
+  <section class="section github-section" id="github" aria-label="GitHub activity proof">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">GitHub / Activity Proof</p>
+        <h2 class="section-title">Open Source & Code</h2>
+      </div>
+      <div class="github-grid reveal">
+        <!-- Contribution Heatmap -->
+        <div>
+          <div class="github-block-title">Contribution Activity</div>
+          <div class="github-block-subtitle">Past 12 months</div>
+          <div class="github-heatmap" aria-label="Simulated GitHub contribution heatmap">
+            <!-- Simulated heatmap cells — replace with real GitHub contribution image -->
+            <div class="heatmap-cell"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l4"></div><div class="heatmap-cell l1"></div>
+            <div class="heatmap-cell l1"></div><div class="heatmap-cell"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l4"></div>
+            <div class="heatmap-cell"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l4"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell"></div><div class="heatmap-cell l3"></div>
+            <div class="heatmap-cell l2"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell"></div><div class="heatmap-cell l4"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l2"></div>
+            <div class="heatmap-cell l1"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell l1"></div><div class="heatmap-cell l2"></div><div class="heatmap-cell l4"></div><div class="heatmap-cell"></div><div class="heatmap-cell l3"></div><div class="heatmap-cell l1"></div>
+          </div>
+        </div>
+
+        <!-- Recent Repositories -->
+        <div>
+          <div class="github-block-title">Recent Repositories</div>
+          <div class="github-block-subtitle">Pinned projects</div>
+          <div class="repo-list">
+            <a href="https://github.com/Lester0961/SRS" target="_blank" rel="noopener" class="repo-card">
+              <div class="repo-name">scholarship-recommendation-system</div>
+              <div class="repo-meta">
+                <span>⭐ 12</span>
+                <span>Updated 2 days ago</span>
+              </div>
+              <div class="repo-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </a>
+            <a href="https://github.com/Lester0961/sisp" target="_blank" rel="noopener" class="repo-card">
+              <div class="repo-name">sisp-portal</div>
+              <div class="repo-meta">
+                <span>⭐ 6</span>
+                <span>Updated 1 week ago</span>
+              </div>
+              <div class="repo-tags">
+                <span class="tag">React</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </a>
+            <a href="https://github.com/Lester0961/foodorder" target="_blank" rel="noopener" class="repo-card">
+              <div class="repo-name">food-ordering-app</div>
+              <div class="repo-meta">
+                <span>⭐ 4</span>
+                <span>Updated 2 weeks ago</span>
+              </div>
+              <div class="repo-tags">
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Tailwind</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Proof Text -->
+        <div>
+          <div class="github-proof-text">
+            <p>All projects are public and available on GitHub. Some are deployed and live for real users.</p>
+            <a href="https://github.com/Lester0961" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">
+              View GitHub Profile
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       10. CONTACT / CTA
+       ============================================ -->
+  <section class="section contact" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Interested in hiring me?</h2>
+        <p class="section-subtitle">Let's build something great together.</p>
+      </div>
+
+      <div class="contact-buttons reveal">
+        <a href="mailto:johnlesterdematera0961@gmail.com" class="contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email Me
+        </a>
+        <a href="https://ph.jobstreet.com/profiles/johnlester-dematera-Lp1xH53T9z" target="_blank" rel="noopener" class="contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          JobStreet
+        </a>
+        <a href="https://github.com/Lester0961" target="_blank" rel="noopener" class="contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="assets/resume/John_Lester_Dematera_Resume.pdf" target="_blank" rel="noopener" class="contact-btn contact-btn--primary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper reveal">
+        <form class="contact-form" id="contact-form" action="mailto:johnlesterdematera0961@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       11. FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="logo-mark" style="width:32px;height:32px;font-size:0.65rem;">JLD</div>
+          <div>
+            <div class="footer-name">John Lester Dematera</div>
+            <div class="footer-role">Frontend Developer</div>
+          </div>
+        </div>
+        <div class="footer-center">
+          &copy; 2026 John Lester Dematera. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       CASE STUDY MODALS
+       ============================================ -->
+
+  <!-- PLWM CMS Case Study Modal -->
+  <div class="modal-overlay" id="modal-plwm" role="dialog" aria-modal="true" aria-labelledby="modal-plwm-title">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close modal" data-close-modal>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h3 class="modal-title" id="modal-plwm-title">PLWM Church Management System</h3>
+
+      <div class="modal-section">
+        <div class="modal-section-title">Context</div>
+        <p>PLWM — Manila Central Church needed a custom digital system to manage church administrative workflows, member records, events, giving, and content. No off-the-shelf solution met their specific needs.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Challenge</div>
+        <p>Building a CMS from scratch for a real organization with no existing digital infrastructure. Had to design role-based access for administrators and members, create intuitive UI for non-technical church staff, and handle deployment for production use.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">My Role</div>
+        <p>Worked as the Front End Developer. Built frontend pages and responsive layouts, developed role-based user interfaces, collaborated with the team on features, and provided debugging and deployment support.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Result</div>
+        <ul>
+          <li>Delivered a working CMS used by the church for real administrative workflows</li>
+          <li>Built responsive UI layouts and reusable components</li>
+          <li>Implemented role-based access for administrators and members</li>
+          <li>Supported real organizational workflow from day one</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Tech Stack</div>
+        <div class="modal-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <p style="font-size:0.75rem;color:var(--text-tertiary);margin-top:1rem;font-style:italic;">This is a private project. Source code is not publicly available.</p>
+    </div>
+  </div>
+
+  <!-- RMC Grade System Case Study Modal -->
+  <div class="modal-overlay" id="modal-rmc" role="dialog" aria-modal="true" aria-labelledby="modal-rmc-title">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close modal" data-close-modal>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h3 class="modal-title" id="modal-rmc-title">RMC Grade Management System</h3>
+
+      <div class="modal-section">
+        <div class="modal-section-title">Context</div>
+        <p>Regis Marie College needed a system to manage student records, post term grades, and calculate GWA. The project was built as an academic group collaboration to solve a real institutional workflow problem.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Challenge</div>
+        <p>Designing a desktop application with proper role-based access (admin vs. student views), grade computation logic (GWA calculation), and SQL Server database integration. Had to ensure data integrity and input validation for academic records.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">My Role</div>
+        <p>Contributed to database schema design, grade management features, and student records management. Worked on the VB.NET Windows Forms UI and SQL Server integration using ADO.NET.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Result</div>
+        <ul>
+          <li>Completed a functional desktop grade management system</li>
+          <li>Implemented role-based login for admins and students</li>
+          <li>Built GWA calculation and grade posting features</li>
+          <li>Integrated SQL Server Express for persistent data storage</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Tech Stack</div>
+        <div class="modal-tags">
+          <span class="tag">VB.NET</span>
+          <span class="tag">Windows Forms</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">ADO.NET</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
