@@ -798,7 +798,102 @@ h1, h2, h3, h4, h5, h6 { color: var(--text-primary); line-height: 1.2; font-weig
 }
 
 /* ============================================
-   09. GITHUB / ACTIVITY PROOF
+   09. CERTIFICATIONS & CREDENTIALS
+   ============================================ */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.certification-card {
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.certification-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+}
+.certification-icon {
+  width: 48px; height: 48px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.1);
+}
+.certification-icon svg { width: 22px; height: 22px; }
+.certification-details {
+  flex-grow: 1;
+}
+.certification-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+.certification-issuer {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+.certification-meta {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+}
+.certification-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.certification-skills .tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: var(--radius);
+}
+
+/* Modal sizing & certificate image layout */
+.modal-lg {
+  max-width: 800px;
+}
+.modal-certificate-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-top: 1rem;
+}
+.modal-certificate-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+  display: block;
+}
+
+/* ============================================
+   10. GITHUB / ACTIVITY PROOF
    ============================================ */
 .github-section {
   background: var(--bg-surface);
@@ -899,7 +994,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--text-primary); line-height: 1.2; font-weig
 }
 
 /* ============================================
-   10. CONTACT / CTA
+   11. CONTACT / CTA
    ============================================ */
 .contact {
   text-align: center;
@@ -1003,7 +1098,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--text-primary); line-height: 1.2; font-weig
 }
 
 /* ============================================
-   11. FOOTER
+   12. FOOTER
    ============================================ */
 .footer {
   background: var(--bg-surface);
@@ -1166,6 +1261,9 @@ h1, h2, h3, h4, h5, h6 { color: var(--text-primary); line-height: 1.2; font-weig
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .education-grid { grid-template-columns: 1fr; }
+  .certification-card { flex-direction: column; gap: 1rem; padding: 1.5rem; }
+  .certification-icon { width: 40px; height: 40px; }
+  .certification-icon svg { width: 18px; height: 18px; }
   .github-grid {
     grid-template-columns: 1fr;
   }
