@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects Archive - John Lester</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "primary-container": "#4f46e5",
+                "surface-dim": "#d3daef",
+                "tertiary-fixed": "#ffdbcc",
+                "tertiary": "#7e3000",
+                "on-tertiary-fixed-variant": "#7b2f00",
+                "on-tertiary-container": "#ffd2be",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#c3c0ff",
+                "on-tertiary-fixed": "#351000",
+                "inverse-on-surface": "#edf0ff",
+                "primary": "#3525cd",
+                "on-secondary": "#ffffff",
+                "primary-fixed": "#e2dfff",
+                "surface-tint": "#4d44e3",
+                "on-secondary-fixed": "#171c25",
+                "secondary-fixed-dim": "#c2c6d3",
+                "on-primary-container": "#dad7ff",
+                "background": "#f9f9ff",
+                "on-primary-fixed": "#0f0069",
+                "on-tertiary": "#ffffff",
+                "on-surface-variant": "#464555",
+                "surface-container-high": "#e1e8fd",
+                "tertiary-fixed-dim": "#ffb695",
+                "outline": "#777587",
+                "surface-container": "#e9edff",
+                "on-background": "#141b2b",
+                "surface-bright": "#f9f9ff",
+                "on-error-container": "#93000a",
+                "surface-variant": "#dce2f7",
+                "outline-variant": "#c7c4d8",
+                "error": "#ba1a1a",
+                "secondary-fixed": "#dee2ef",
+                "on-primary-fixed-variant": "#3323cc",
+                "surface-container-low": "#f1f3ff",
+                "inverse-surface": "#293040",
+                "on-secondary-fixed-variant": "#424751",
+                "on-secondary-container": "#60646f",
+                "inverse-primary": "#c3c0ff",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#141b2b",
+                "secondary-container": "#dee2ef",
+                "surface-container-highest": "#dce2f7",
+                "surface": "#f9f9ff",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary": "#5a5e69",
+                "tertiary-container": "#a44100"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "base": "8px",
+                "gutter": "24px",
+                "margin-desktop": "40px",
+                "container-max": "1200px",
+                "margin-mobile": "16px",
+                "stack-sm": "0.5rem",
+                "section-gap": "5rem",
+                "grid-gutter": "2rem",
+                "stack-md": "1rem",
+                "section-gap-mobile": "3.5rem",
+                "card-padding": "1.5rem"
+        },
+        "fontFamily": {
+                "headline-xl": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Inter"
+                ],
+                "body-sm": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-lg": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "code-md": [
+                        "JetBrains Mono"
+                ],
+                "label-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-sm": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "20px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "code-md": [
+                        "14px",
+                        {
+                                "lineHeight": "22px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .filter-btn.active {
+            background-color: #3525cd;
+            color: #ffffff;
+            border-color: #3525cd;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-background/80 text-primary font-body-md text-body-md fixed top-0 w-full z-50 backdrop-blur-xl border-b border-outline-variant shadow-sm active:scale-95 transition-transform">
+<div class="max-w-container-max mx-auto px-6 h-16 flex items-center justify-between">
+<div class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">John Lester</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Skills</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Experience</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md font-medium hover:opacity-90 transition-opacity">Resume</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-[calc(64px+var(--spacing-section-gap))] pb-section-gap px-6 md:px-0 max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<header class="mb-section-gap text-center md:text-left">
+<h1 class="font-headline-lg text-headline-lg md:font-headline-xl md:text-headline-xl text-on-surface mb-stack-md">Projects Archive</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Building practical, scalable systems and intuitive interfaces. Explore my recent work spanning frontend architecture, web applications, and UI/UX design.</p>
+</header>
+<!-- Filters -->
+<div class="mb-grid-gutter flex flex-wrap gap-stack-sm justify-center md:justify-start">
+<button class="filter-btn active px-4 py-2 rounded-full border border-outline-variant font-label-md text-label-md text-on-surface transition-colors" data-filter="all">All</button>
+<button class="filter-btn px-4 py-2 rounded-full border border-outline-variant font-label-md text-label-md text-on-surface transition-colors hover:bg-surface-container" data-filter="frontend">Frontend</button>
+<button class="filter-btn px-4 py-2 rounded-full border border-outline-variant font-label-md text-label-md text-on-surface transition-colors hover:bg-surface-container" data-filter="fullstack">Fullstack</button>
+<button class="filter-btn px-4 py-2 rounded-full border border-outline-variant font-label-md text-label-md text-on-surface transition-colors hover:bg-surface-container" data-filter="ui">UI/UX</button>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-grid-gutter" id="projects-grid">
+<!-- Project Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex flex-col group" data-category="frontend">
+<div class="h-48 w-full bg-gradient-to-br from-primary-container to-tertiary-container relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-105 transition-transform duration-500" data-alt="Abstract digital representation of a modern web application interface floating in a dark, neon-lit void. Deep blues and electric purples dominate the high-contrast aesthetic, emphasizing a futuristic, clean UI design pattern." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9XnN4ma5oF7GCGOO4Q-b7HScFCQA6vUfwgVSd1_8ozc67jrSKYpYte_zh0YIKmPeLzlcSpDmUKlb-wv5CiqprsjkDsYAKamHzy-jrrC4yHmdlh45jqf_JAsWhR1-0_f_bROZOR1_ZKV20pK_I0v6k4w8lrdBF3BfShFO_Nlv9k4y1DfZ2wwmjGV2kWMix6Rcn2bnaBoE6dO7gdo4fC5k8rTPQ4B9dSyVU84RkLQXGE-cS8xxIpa07i9gqjlPgL1uU5oFqPjqeLp34')"></div>
+</div>
+<div class="p-card-padding flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">E-Commerce Platform Redesign</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">A complete overhaul of a legacy e-commerce platform focusing on performance optimization and modern user experience. Implemented a decoupled architecture.</p>
+<div class="flex flex-wrap gap-2 mb-stack-md">
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">React</span>
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">Next.js</span>
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">Tailwind</span>
+</div>
+<div class="flex gap-4 mt-auto pt-4 border-t border-outline-variant">
+<a class="flex items-center gap-1 text-primary hover:text-tertiary transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span> Live Demo
+                        </a>
+<a class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span> GitHub
+                        </a>
+</div>
+</div>
+</article>
+<!-- Project Card 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex flex-col group" data-category="fullstack">
+<div class="h-48 w-full bg-gradient-to-br from-secondary-container to-surface-bright relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated dashboard interface glowing softly in a dark mode setting. Emerald greens and deep slate greys create a technical, data-driven atmosphere. Graphs and metrics are faintly visible in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqssn05LXTtJA9YRLmqW1163S4eCAJO5wHUJBGQs2FQx9vBhVgmf-4iYwr88s9GPFp1t-dPxWRce-jImmn3N7FFQsVgaoXFmtsZ6xcQdIfWsN-RDtctzufXJe5Uesi5nVSjYwGHvxc7IVql8QXlk9jD2w8mUdx698OxfBXAuSpxOTebsJ1fBILKHpEINjfRkZdShmgXFekTESHOgt2yc2DzbYBONs2ttc0GZPqWZa_bJNBY_AdrQQHkAUYmZB0N-dKp4Dc1-zDUO9z')"></div>
+</div>
+<div class="p-card-padding flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Financial Dashboard</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Real-time financial data visualization dashboard built for high-frequency traders. Features complex charts and low-latency data streaming.</p>
+<div class="flex flex-wrap gap-2 mb-stack-md">
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">Vue.js</span>
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">Node.js</span>
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">D3.js</span>
+</div>
+<div class="flex gap-4 mt-auto pt-4 border-t border-outline-variant">
+<a class="flex items-center gap-1 text-primary hover:text-tertiary transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span> Live Demo
+                        </a>
+<a class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span> GitHub
+                        </a>
+</div>
+</div>
+</article>
+<!-- Project Card 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex flex-col group" data-category="ui">
+<div class="h-48 w-full bg-gradient-to-br from-outline-variant to-surface-highest relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist design system components arranged meticulously on a dark canvas. Soft shadows and precise 1px borders define the neo-minimalist style, utilizing a strict palette of stark whites and deep neutral blacks." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAi0GZJnmkympnrfARPmaMJdgdvD2nnqmSRNLPbmTfJXaku67CDojIs4xfrg9Va3A2yladmYICGp--DwxQAstO8e6xBkpIMipp3eUr02Hsu70_CNrWUoe2_IRDsah878GPnDAJrBgoghd2dtAhxv1XrccxZmUu2s67WKRoQl44T7U6V1xqMG09uOngeKr8jyhqKivHabODHSp5KSBGCjw9i0_S8p9oBKBlTD4_NuTa3Cuf__eOJosTvzSKJ5BzH6M9fnkgAyuOOZohK')"></div>
+</div>
+<div class="p-card-padding flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Nebula Design System</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">An open-source UI component library designed for high-performance React applications, enforcing accessibility and strict themeability.</p>
+<div class="flex flex-wrap gap-2 mb-stack-md">
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">Storybook</span>
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">TypeScript</span>
+<span class="px-2 py-1 bg-surface-container text-primary rounded font-label-md text-label-md">Figma</span>
+</div>
+<div class="flex gap-4 mt-auto pt-4 border-t border-outline-variant">
+<a class="flex items-center gap-1 text-primary hover:text-tertiary transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span> Docs
+                        </a>
+<a class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span> GitHub
+                        </a>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container text-on-surface font-body-sm text-body-sm w-full py-12 border-t border-outline-variant opacity-80 hover:opacity-100 transition-opacity mt-auto">
+<div class="max-w-container-max mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                John Lester
+            </div>
+<div class="text-on-surface-variant font-label-md text-label-md text-center md:text-left">
+                © 2024 John Lester Dematera. Built with precision.
+            </div>
+<div class="flex space-x-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Twitter</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple filtering logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('#projects-grid article');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    projects.forEach(project => {
+                        if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                            project.style.display = 'flex';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body></html>

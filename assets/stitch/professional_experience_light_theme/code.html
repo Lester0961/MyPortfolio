@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professional Experience - John Lester</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "primary-container": "#4f46e5",
+                "surface-dim": "#d3daef",
+                "tertiary-fixed": "#ffdbcc",
+                "tertiary": "#7e3000",
+                "on-tertiary-fixed-variant": "#7b2f00",
+                "on-tertiary-container": "#ffd2be",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#c3c0ff",
+                "on-tertiary-fixed": "#351000",
+                "inverse-on-surface": "#edf0ff",
+                "primary": "#3525cd",
+                "on-secondary": "#ffffff",
+                "primary-fixed": "#e2dfff",
+                "surface-tint": "#4d44e3",
+                "on-secondary-fixed": "#171c25",
+                "secondary-fixed-dim": "#c2c6d3",
+                "on-primary-container": "#dad7ff",
+                "background": "#f9f9ff",
+                "on-primary-fixed": "#0f0069",
+                "on-tertiary": "#ffffff",
+                "on-surface-variant": "#464555",
+                "surface-container-high": "#e1e8fd",
+                "tertiary-fixed-dim": "#ffb695",
+                "outline": "#777587",
+                "surface-container": "#e9edff",
+                "on-background": "#141b2b",
+                "surface-bright": "#f9f9ff",
+                "on-error-container": "#93000a",
+                "surface-variant": "#dce2f7",
+                "outline-variant": "#c7c4d8",
+                "error": "#ba1a1a",
+                "secondary-fixed": "#dee2ef",
+                "on-primary-fixed-variant": "#3323cc",
+                "surface-container-low": "#f1f3ff",
+                "inverse-surface": "#293040",
+                "on-secondary-fixed-variant": "#424751",
+                "on-secondary-container": "#60646f",
+                "inverse-primary": "#c3c0ff",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#141b2b",
+                "secondary-container": "#dee2ef",
+                "surface-container-highest": "#dce2f7",
+                "surface": "#f9f9ff",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "secondary": "#5a5e69",
+                "tertiary-container": "#a44100"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "base": "8px",
+                "gutter": "24px",
+                "margin-desktop": "40px",
+                "container-max": "1200px",
+                "margin-mobile": "16px",
+                "stack-md": "1rem",
+                "section-gap": "5rem",
+                "card-padding": "1.5rem",
+                "section-gap-mobile": "3.5rem",
+                "grid-gutter": "2rem",
+                "stack-sm": "0.5rem"
+        },
+        "fontFamily": {
+                "headline-xl": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Inter"
+                ],
+                "body-sm": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-lg": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "code-md": [
+                        "JetBrains Mono"
+                ],
+                "label-md": [
+                        "Inter"
+                ],
+                "display-hero-mobile": ["Inter", "sans-serif"],
+                "metadata": ["Inter", "sans-serif"],
+                "display-hero": ["Inter", "sans-serif"],
+                "label-caps": ["Inter", "sans-serif"]
+        },
+        "fontSize": {
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-sm": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "20px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "code-md": [
+                        "14px",
+                        {
+                                "lineHeight": "22px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-hero-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                "metadata": ["14px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                "display-hero": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }]
+        }
+},
+    },
+  }
+</script>
+<style>
+        /* Custom Utilities for Glow Effects */
+        .primary-glow {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.4);
+        }
+        .hover-glow:hover {
+            box-shadow: 0 0 30px rgba(79, 70, 229, 0.1);
+        }
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-surface/80 fixed top-0 w-full z-50 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300 ease-in-out">
+<nav class="flex justify-between items-center px-8 h-16 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md font-bold text-on-surface" href="#">
+                John Lester
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Projects</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Experience</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Credentials</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<!-- Trailing Action -->
+<a class="hidden md:inline-flex items-center justify-center px-4 py-2 bg-primary text-on-primary font-metadata text-metadata rounded-lg hover:bg-primary-fixed-dim transition-colors" href="#">
+                Resume
+            </a>
+<!-- Mobile Menu Trigger (Simplified) -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] pb-section-gap md:pt-[120px]">
+<div class="max-w-[1140px] mx-auto px-6 md:px-8">
+<!-- Page Header -->
+<section class="mb-16">
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-surface mb-4">
+                    Professional Experience
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    A timeline of my journey building scalable interfaces, robust systems, and delivering impact through code.
+                </p>
+</section>
+<!-- Experience Timeline -->
+<section class="mb-section-gap">
+<div class="relative border-l-2 border-primary ml-3 md:ml-4">
+<!-- Timeline Item: Active Role -->
+<div class="mb-12 ml-8 md:ml-12 relative group">
+<!-- Active Dot with Glow -->
+<div class="absolute -left-[37px] md:-left-[53px] top-1.5 w-4 h-4 rounded-full bg-primary primary-glow border-2 border-surface z-10"></div>
+<!-- Content Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-card-padding hover-glow transition-all duration-300 relative overflow-hidden group-hover:border-primary/50 group-hover:bg-surface-container-low shadow-sm">
+<!-- Subtle Background Accents -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-4 relative z-10">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Frontend Developer</h2>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">PLWM - Manila Central Church</h3>
+</div>
+<div class="inline-flex items-center px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-label-caps text-label-caps text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] mr-2">calendar_today</span>
+                                    Jan 2026 - Present
+                                </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 relative z-10">
+                                Spearheading the frontend architecture and development of a custom Church Management System (CMS) tailored to complex organizational needs. Focus on high-performance, responsive interfaces and seamless data integration.
+                            </p>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant relative z-10">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 text-[20px] mt-0.5">check_circle</span>
+<span>Architecting and building responsive, accessible UI layouts from the ground up using modern React patterns.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 text-[20px] mt-0.5">check_circle</span>
+<span>Collaborating closely with stakeholders to define and implement core features for membership tracking and event management.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 text-[20px] mt-0.5">check_circle</span>
+<span>Providing ongoing deployment support and establishing CI/CD pipelines for reliable, automated releases.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Timeline Item: Previous Experience (Contextual) -->
+<div class="mb-12 ml-8 md:ml-12 relative opacity-80 hover:opacity-100 transition-opacity">
+<!-- Inactive Dot -->
+<div class="absolute -left-[37px] md:-left-[53px] top-1.5 w-4 h-4 rounded-full bg-surface-variant border-2 border-primary z-10"></div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-card-padding shadow-sm">
+<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-4">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Freelance Web Developer</h2>
+<h3 class="font-body-lg text-body-lg text-on-surface-variant mt-1">Independent</h3>
+</div>
+<div class="inline-flex items-center px-3 py-1 bg-surface-container-lowest border border-outline-variant rounded-full font-label-caps text-label-caps text-on-surface-variant">
+                                    2024 - 2025
+                                </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Delivered custom web solutions for local businesses, focusing on performance optimization, SEO, and accessible design systems.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills in Action Section (Bento Grid) -->
+<section>
+<div class="mb-8">
+<h2 class="font-headline-lg text-headline-lg text-on-surface inline-flex items-center">
+<span class="material-symbols-outlined mr-3 text-primary">architecture</span>
+                        Skills in Action
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                        How core technologies translate to structural solutions in my current role.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Tech Block 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 hover:bg-surface-container-low transition-colors group shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface group-hover:text-primary">code_blocks</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">React</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Building the modular, interactive foundation of the Church Management System. Utilizing hooks and context for complex state management across administration modules.
+                        </p>
+</div>
+<!-- Tech Block 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 hover:bg-surface-container-low transition-colors group shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface group-hover:text-primary">database</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Supabase</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Architecting secure, real-time data structures. Leveraging Row Level Security (RLS) to ensure privacy for congregation data and efficient querying for dashboards.
+                        </p>
+</div>
+<!-- Tech Block 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 hover:bg-surface-container-low transition-colors group shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface group-hover:text-primary">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Node.js</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Developing robust backend services and serverless functions to handle intensive data processing, report generation, and third-party API integrations safely.
+                        </p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low w-full py-12 border-t border-outline-variant opacity-80 hover:opacity-100 transition-opacity">
+<div class="max-w-[1140px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<!-- Brand / Copyright -->
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-md text-headline-md text-on-surface mb-2">John Lester</span>
+<p class="font-metadata text-metadata text-on-surface-variant">
+                    © 2024 John Lester Dematera. Built with precision.
+                </p>
+</div>
+<!-- Footer Links -->
+<div class="flex space-x-6">
+<a class="font-metadata text-metadata text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-metadata text-metadata text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-metadata text-metadata text-on-surface-variant hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="font-metadata text-metadata text-on-surface-variant hover:text-primary transition-colors" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>
