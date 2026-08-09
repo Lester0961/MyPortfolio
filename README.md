@@ -1,135 +1,93 @@
-# John Lester Dematera — Portfolio
+# John Lester Dematera Portfolio
 
-A professional, recruiter-focused developer portfolio showcasing real projects, practical skills, and deployment experience.
+A cinematic developer portfolio built around real systems, real project captures, and intentionally dramatic motion.
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Live-10B981?style=flat-square) ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+Live site: [lester0961.vercel.app](https://lester0961.vercel.app)
 
----
+## Experience
 
-## About
+The site presents John Lester as a frontend developer and system builder through a long-form, scroll-directed narrative:
 
-This portfolio presents my work as a **Frontend Developer**, **Computer Science Student**, and **System Builder**. It features deployed web applications, case studies, GitHub activity proof, and a direct path for recruiters to reach me.
+- A layered hero with generated cinematic artwork, a live Three.js system, project planes, and pointer depth
+- Full-screen project scenes using real captures from SISP, SRS, and Lutong Pinoy
+- GSAP scroll choreography, SplitText reveals, Flip transitions, magnetic controls, orbital links, and a credential scanner
+- Expandable case studies and a live GitHub profile panel with a resilient fallback
+- Preserved resume, credential, contact, social, and project destinations
+- Keyboard support, semantic sections, native dialogs, reduced-motion behavior, and responsive layouts
 
-**Live Site:** [johnlesterdematera.vercel.app](https://johnlesterdematera.vercel.app) *(update after deployment)*
+## Stack
 
----
+- React 19 and Vite 8
+- GSAP with ScrollTrigger, SplitText, and Flip
+- Three.js for the hero system
+- Phosphor Icons
+- Custom CSS design system
 
-## Features
+No environment variables are required. The GitHub panel reads only public profile information.
 
-- **11-section single-page layout** — Navigation, Hero, Stats, Projects, About, Skills, Experience, Education, GitHub Proof, Contact, Footer
-- **6 featured projects** with live demos, GitHub links, and case studies
-- **Interactive particle canvas** hero background
-- **Scroll-reveal animations** using IntersectionObserver
-- **Case study modals** for detailed project breakdowns (Context → Challenge → Result)
-- **Fully responsive** — desktop, tablet, and mobile
-- **Dark neo-minimalist design** with blue accent theme
-- **Accessible** — semantic HTML5, ARIA attributes, keyboard navigation
-- **Zero dependencies** — pure HTML, CSS, and JavaScript
+## Local development
 
----
-
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Structure | HTML5 |
-| Styling | Vanilla CSS (custom properties, grid, flexbox) |
-| Interactivity | Vanilla JavaScript (ES6+) |
-| Typography | Inter (Google Fonts) |
-| Deployment | Vercel |
-
----
-
-## Project Structure
-
+```powershell
+npm install
+npm run dev
 ```
+
+Open the URL shown by Vite, normally `http://localhost:5173`.
+
+## Verification
+
+```powershell
+npm run check
+```
+
+This runs the source guard and a production build. The source guard verifies the required section anchors, essential assets, motion constraints, and typography rule used by the page.
+
+For a production preview:
+
+```powershell
+npm run build
+npm run preview
+```
+
+## Project structure
+
+```text
 portfolio/
-├── index.html          # Main single-page portfolio
-├── index.css           # Design system + all component styles
-├── index.js            # Interactivity (nav, particles, modals, scroll)
-├── README.md           # This file
-├── LICENSE             # MIT License
-├── assets/
-│   ├── images/         # Profile photo + project screenshots
-│   └── resume/         # Resume PDF
-└── docs/
-    └── john_lester_dematera_consolidated_profile_data.md
+|-- assets/
+|   |-- images/        # Profile and generated hero artwork
+|   |-- projects/      # Real project captures
+|   |-- resume/        # Downloadable resume
+|   `-- certificates/  # Credential proof
+|-- scripts/           # Lightweight source verification
+|-- src/
+|   |-- components/    # Three.js visual system
+|   |-- App.jsx        # Page structure and GSAP choreography
+|   |-- data.js        # Portfolio content and destinations
+|   `-- styles.css     # Design system and responsive behavior
+|-- index.html
+|-- package.json
+`-- vite.config.js
 ```
 
----
+## Deployment
 
-## Getting Started
+Vercel can deploy this as a standard Vite project. Use `npm run build` as the build command and `dist` as the output directory if those values are not detected automatically.
 
-### Local Development
+## Accessibility and performance
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Lester0961/MyPortfolio.git
-   cd MyPortfolio
-   ```
-
-2. Open `index.html` in your browser:
-   ```bash
-   # On Windows
-   start index.html
-
-   # Or use a local server (recommended)
-   npx serve .
-   ```
-
-3. No build step required — it's a static site.
-
-### Deploy to Vercel
-
-1. Push to GitHub
-2. Import the repository at [vercel.com/new](https://vercel.com/new)
-3. Vercel auto-detects it as a static site
-4. Deploy — no configuration needed
-
----
-
-## Customization
-
-### Replace Placeholder Content
-
-| File | What to Replace |
-|---|---|
-| `assets/images/` | Add real project screenshots |
-| `assets/resume/` | Add your resume PDF (`John_Lester_Dematera_Resume.pdf`) |
-| Hero avatar | Replace the "JLD" initials with a `<img>` tag pointing to your photo |
-
-### Environment
-
-No environment variables needed. This is a fully static site.
-
----
-
-## Featured Projects
-
-1. **Scholarship Recommendation System (SRS)** — Explainable scholarship matching with weighted criteria
-2. **Student Information and Services Portal (SISP)** — Academic portal with AI advisory chatbot
-3. **PLWM Church CMS** — Custom church management system *(private case study)*
-4. **Food Ordering App** — Responsive food ordering with cart and checkout
-5. **RMC Grade Management System** — Desktop grade system with VB.NET
-6. **AuraHub** — Mood-based music app with dynamic UI
-
----
-
-## Screenshots
-
-*Replace this section with actual screenshots after deployment.*
-
----
+- `prefers-reduced-motion` removes nonessential motion and disables the WebGL scene
+- Interactive elements keep visible focus states and semantic labels
+- The Three.js experience is loaded as a separate on-demand bundle
+- Project images declare dimensions and are deferred outside the hero
 
 ## Author
 
-**John Lester Dematera**
-- GitHub: [@Lester0961](https://github.com/Lester0961)
-- JobStreet: [John Lester Dematera](https://ph.jobstreet.com/profiles/johnlester-dematera-Lp1xH53T9z)
-- Email: johnlesterdematera0961@gmail.com
+John Lester Dematera
 
----
+- [GitHub](https://github.com/Lester0961)
+- [LinkedIn](https://www.linkedin.com/in/johnlester21/)
+- [Email](mailto:johnlesterdematera0961@gmail.com)
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+Licensed under the [MIT License](LICENSE).
