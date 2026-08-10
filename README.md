@@ -9,7 +9,7 @@ Live site: [lester0961.vercel.app](https://lester0961.vercel.app)
 The site presents John Lester as a frontend developer and system builder through a long-form, scroll-directed narrative:
 
 - A layered hero with generated cinematic artwork, a live Three.js system, project planes, and pointer depth
-- Full-screen project scenes using real captures from SISP, SRS, and Lutong Pinoy
+- Full-screen project scenes using real captures from SISP, SRS, and Vertica
 - GSAP scroll choreography, SplitText reveals, Flip transitions, magnetic controls, orbital links, and a credential scanner
 - Expandable case studies and a live GitHub profile panel with a resilient fallback
 - Preserved resume, credential, contact, social, and project destinations

@@ -1,6 +1,6 @@
 import sispImage from "../assets/projects/sisp.png";
 import srsImage from "../assets/projects/srs.png";
-import lutongImage from "../assets/projects/lutong-pinoy.png";
+import verticaImage from "../assets/projects/vertica-deployed-hero.png";
 import systemsEngineImage from "../assets/images/systems-engine.jpg";
 import profileImage from "../assets/images/profile.png";
 import certificateImage from "../assets/certificates/Screenshot 2026-06-08 213045.png";
@@ -57,24 +57,24 @@ export const featuredProjects = [
     },
   },
   {
-    id: "lutong-pinoy",
-    name: "Lutong Pinoy Ordering App",
-    shortName: "Lutong Pinoy",
+    id: "vertica",
+    name: "Vertica Residences Platform",
+    shortName: "Vertica",
     description:
-      "A responsive local food ordering application with category browsing, authentication, cart persistence, and order flows.",
-    image: lutongImage,
-    imageAlt: "Lutong Pinoy food ordering homepage",
-    liveUrl: "https://foodorder-lester.vercel.app/",
-    githubUrl: "https://github.com/Lester0961/foodorder",
-    stack: ["React", "Vite", "React Router", "Tailwind"],
-    theme: "#b92a2f",
+      "A full-stack property platform combining residential discovery, live unit availability, recommendations, and role-based operations.",
+    image: verticaImage,
+    imageAlt: "Vertica Residences landing page with a residential exterior and live availability",
+    liveUrl: "https://vertica-residences.vercel.app",
+    githubUrl: "https://github.com/Lester0961/vertica",
+    stack: ["Next.js", "Supabase", "Three.js", "Tailwind"],
+    theme: "#7bd7a5",
     details: {
       context:
-        "A local food business needs an ordering experience that feels immediate on phones and remains clear across menu, cart, and account states.",
+        "Property discovery is often split across listings, availability checks, and separate follow-up flows.",
       role:
-        "Built the responsive frontend, navigation, category experience, authentication screens, and persistent cart behavior.",
+        "Built a connected platform experience across public discovery, availability exploration, recommendations, and role-based operations.",
       result:
-        "A deployed ordering application with a clear customer journey from discovery to account and cart management.",
+        "A deployed property system that lets visitors browse residences, explore availability, and move into guided inquiry or reservation flows.",
     },
   },
 ];

@@ -28,7 +28,7 @@ const requiredAssets = [
   "assets/images/systems-engine.jpg",
   "assets/projects/srs.png",
   "assets/projects/sisp.png",
-  "assets/projects/lutong-pinoy.png",
+  "assets/projects/vertica-deployed-hero.png",
   "assets/certificates/Screenshot 2026-06-08 213045.png",
   "assets/resume/John_Lester_Dematera_Resume.pdf",
 ];
